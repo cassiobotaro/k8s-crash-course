@@ -1,0 +1,9 @@
+# https://kubernetes.io/docs/concepts/configuration/configmap/
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+  namespace: default
+data:
+  mongo-url: mongo-service
+---
